@@ -1,0 +1,94 @@
+﻿═══════════════════════════════════════════════════════════════════════════════
+                    AUTENTICAÇÃO GITHUB - INSTRUÇÕES
+═══════════════════════════════════════════════════════════════════════════════
+
+O Git está pedindo autenticação para fazer push para o GitHub.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔑 COMO GERAR E USAR UM TOKEN DO GITHUB
+═══════════════════════════════════════════════════════════════════════════════
+
+OPÇÃO 1: Usar Token (Recomendado)
+──────────────────────────────────────────────────────────────────────────────
+
+1. Acesse: https://github.com/settings/tokens
+
+2. Clique em "Generate new token" > "Generate new token (classic)"
+
+3. Preencha:
+   ├─ Note: SmartServe API Token
+   ├─ Expiration: 90 days (ou escolha outra)
+   └─ Scopes: Marque ✓ repo (controle total de repositórios)
+
+4. Clique em "Generate token"
+
+5. COPIE O TOKEN (você não verá novamente!)
+
+6. Quando Git pedir autenticação:
+   └─ Username: edimar.silva87@gmail.com
+   └─ Password/Token: Cole o token aqui
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OPÇÃO 2: Salvar Credenciais Localmente
+──────────────────────────────────────────────────────────────────────────────
+
+Para não precisar digitar token toda vez:
+
+1. Abra PowerShell como Administrador
+
+2. Execute:
+   $ git config --global credential.helper manager
+
+3. Na próxima vez que pedir autenticação, salve marcando a opção
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OPÇÃO 3: Usar SSH Keys (Mais Seguro)
+──────────────────────────────────────────────────────────────────────────────
+
+1. Gerar chave SSH:
+   $ ssh-keygen -t ed25519 -C "edimar.silva87@gmail.com"
+
+2. Adicionar em: https://github.com/settings/ssh/new
+
+3. Testar:
+   $ ssh -T git@github.com
+
+4. Configurar Git para usar SSH:
+   $ git remote set-url origin git@github.com:edimar1315/smartserve-api.git
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚠️ PRÓXIMO PASSO: FAZER PUSH NOVAMENTE
+═══════════════════════════════════════════════════════════════════════════════
+
+Após configurar a autenticação:
+
+1. Abra PowerShell na pasta do projeto:
+   $ cd C:\Users\edima\OneDrive\smartserve\smartserve-api
+
+2. Execute o comando de push:
+   $ git push -u origin main
+
+3. Digite suas credenciais quando solicitado
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 DICA RÁPIDA
+═══════════════════════════════════════════════════════════════════════════════
+
+Executar o script:
+   $ powershell -ExecutionPolicy Bypass -File C:\Users\edima\OneDrive\smartserve\smartserve-api\push-final.ps1
+
+Ou manualmente:
+   $ cd C:\Users\edima\OneDrive\smartserve\smartserve-api
+   $ git add -A
+   $ git commit -m "Configuração inicial: Entidades de domínio, Infrastructure, Middleware, Docker e documentação completa"
+   $ git push -u origin main
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Desenvolvido com ❤️ para SmartServe Platform
+
