@@ -1,0 +1,75 @@
+﻿version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: smartserve-db
+    environment:
+      POSTGRES_USER: smartserve_user
+      POSTGRES_PASSWORD: smartserve_password_dev
+      POSTGRES_DB: smartserve_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smartserve_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - smartserve-network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: smartserve-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - smartserve-network
+
+  # RabbitMQ Message Queue
+  rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    container_name: smartserve-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: smartserve
+      RABBITMQ_DEFAULT_PASS: smartserve_password_dev
+    ports:
+      - "5672:5672"      # AMQP
+      - "15672:15672"    # Management UI
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - smartserve-network
+
+  # Adminer (Database UI)
+  adminer:
+    image: adminer:latest
+    container_name: smartserve-adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - smartserve-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  smartserve-network:
+    driver: bridge
+

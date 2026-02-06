@@ -1,0 +1,72 @@
+﻿# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Entity Framework
+*.db
+*.db-shm
+*.db-wal
+
+# ReSharper
+.resharper
+.resharper.user
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Rider
+riderModule.iml
+
+# Mac OS
+.DS_Store
+
+# Node modules (if needed)
+node_modules/
+npm-debug.log
+
+# Local database files
+*.sqlite
+*.sqlite3
+
+# Application-specific
+migrations/
+appsettings.local.json
+
