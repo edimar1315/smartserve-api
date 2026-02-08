@@ -1,21 +1,42 @@
-# Node.js
+# Setup & Scripts Locais
+# ============================================
+# Scripts de setup local (não commitados)
+setup.bat
+setup.ps1
+fix-setup.bat
+fix-setup.ps1
+diagnose.bat
+validate.sh
 
-# Logs
-logs/
-*.log
+# Scripts de push pessoais (não commitados)
+push-to-github.bat
+push-to-github.ps1
+push-to-github.sh
+push-final.ps1
+cleanup-repo.sh
+commit-prompts.ps1
+commit-prompts.sh
 
-# Dependency directories
-node_modules/
+# ============================================
+# Arquivos Temporários & Diagnóstico
+# ============================================
+# Relatórios temporários
+DIAGNOSTICO_E_SOLUCAO.md
+FINAL_REPORT.txt
+SETUP_STATUS.md
+SUMMARY.txt
+TREE_STRUCTURE.txt
+PROJECT_MANIFEST.txt
+SCRIPTS_RESUMO.txt
 
-# Build output
-dist/
+# Configurações pessoais
+AUTENTICACAO_GITHUB.txt
+CRIAR_REPOSITORIO_GITHUB.txt
+GIT_CONFIGURATION.txt
+GITHUB_PUSH_SCRIPTS_GUIDE.md
 
-# Temporary files
-*.tmp
+# Análises temporárias
+REPO_CLEANUP_ANALYSIS.md
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Documentation
-/api-docs/
+# Outros temporários
+INDEX.html
