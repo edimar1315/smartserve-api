@@ -1,4 +1,6 @@
-﻿﻿﻿# Build results
+﻿# ============================================
+# .NET Build Results
+# ============================================
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -14,102 +16,157 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-# Visual Studio cache/options
+# ============================================
+# IDE & Editors
+# ============================================
+# Visual Studio
 .vs/
-
-# Visual Studio Code
-.vscode/
-*.code-workspace
-
-# User-specific files
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# Entity Framework
-*.db
-*.db-shm
-*.db-wal
-
-# ReSharper
-.resharper
-.resharper.user
-*.DotSettings.user
+# Visual Studio Code
+.vscode/
+*.code-workspace
 
 # JetBrains Rider
 .idea/
 *.sln.iml
+*.DotSettings.user
+riderModule.iml
 
-# Environment variables
+# ReSharper
+.resharper
+.resharper.user
+
+# ============================================
+# Database & Entity Framework
+# ============================================
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+migrations/
+
+# ============================================
+# Environment & Configuration
+# ============================================
 .env
 .env.local
 .env.*.local
+appsettings.local.json
+secrets.json
 
+# ============================================
+# Dependencies
+# ============================================
 # NuGet
 *.nupkg
 *.snupkg
 .nuget/
 
-# Rider
-riderModule.iml
-
-# Mac OS
-.DS_Store
-
-# Node modules (if needed)
+# Node (se necessário)
 node_modules/
 npm-debug.log
 
-# Local database files
-*.sqlite
-*.sqlite3
-
-# Application-specific
-migrations/
-appsettings.local.json
-
-# .gitignore para projeto .NET (base + local env)
-bin/
-obj/
-*.user
-*.suo
-*.opendb
-*.vs/
-.vscode/
-*.db
-
-# Resposta para dotnet user-secrets
-secrets.json
-
-# Arquivos de ambiente locais
-.env.local
-.env.*.local
-.env
-
-# Logs
-*.log
-
+# ============================================
 # Docker
+# ============================================
 docker-compose.override.yml
 
 # ============================================
-# IMPORTANTE: Arquivos de IA e Documentação
+# Logs & Temporários
 # ============================================
-# ✅ COMITAR (são parte do projeto):
-#    - .github/prompts/**/*.prompt.md
-#    - AI_PROMPTS_GUIDE.md
-#    - IMPLEMENTATION_REPORT.md
-#    - README.md, GETTING_STARTED.md
-#
-# ❌ NÃO COMITAR (se existirem):
-#    - Conversas privadas com IA
-#    - Arquivos .ai/ ou .copilot/ pessoais
-#    - Prompts com dados sensíveis do projeto
+*.log
+*.tmp
+*.temp
+*_diag.txt
+build.log
+docker_info.txt
+ef_diag.txt
+path.txt
 
-# Ignorar conversas privadas com IA (se houver)
+# ============================================
+# Setup & Scripts Locais
+# ============================================
+# Scripts de setup local (não commitados)
+setup.bat
+setup.ps1
+fix-setup.bat
+fix-setup.ps1
+diagnose.bat
+validate.sh
+start-containers.bat
+stop-containers.bat
+
+# Scripts de push pessoais (não commitados)
+push-to-github.bat
+push-to-github.ps1
+push-to-github.sh
+push-final.ps1
+
+# ============================================
+# Arquivos Temporários & Diagnóstico
+# ============================================
+# Relatórios temporários
+DIAGNOSTICO_E_SOLUCAO.md
+FINAL_REPORT.txt
+SETUP_STATUS.md
+SUMMARY.txt
+TREE_STRUCTURE.txt
+PROJECT_MANIFEST.txt
+SCRIPTS_RESUMO.txt
+
+# Configurações pessoais
+AUTENTICACAO_GITHUB.txt
+CRIAR_REPOSITORIO_GITHUB.txt
+GIT_CONFIGURATION.txt
+GITHUB_PUSH_SCRIPTS_GUIDE.md
+
+# Análises temporárias
+REPO_CLEANUP_ANALYSIS.md
+
+# Outros temporários
+INDEX.html
+
+# ============================================
+# IA & Assistentes
+# ============================================
+# ✅ COMITAR (documentação do projeto):
+#    - .github/prompts/**/*.prompt.md
+#    - docs/AI_PROMPTS_GUIDE.md
+#    - docs/GIT_COMMIT_POLICY.md
+#    - README.md, docs/GETTING_STARTED.md
+
+# ❌ NÃO COMITAR (pessoal):
 .ai-conversations/
 .copilot-chat/
 *.ai-history.json
+
+# ============================================
+# Sistema Operacional
+# ============================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# Notas
+# ============================================
+# Este .gitignore protege:
+# 1. Arquivos de build (.NET)
+# 2. Configurações pessoais (IDE, secrets)
+# 3. Scripts de setup local
+# 4. Logs e diagnósticos temporários
+# 5. Dados sensíveis (.env, secrets.json)
+#
+# Mantém commitados:
+# - Código fonte (SmartServe.Api/)
+# - Documentação (docs/)
+# - Prompts de IA (.github/prompts/)
+# - Configurações de projeto (docker-compose.yml, Dockerfile)
+# ============================================
 
