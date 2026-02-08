@@ -1,4 +1,4 @@
-﻿# Build results
+﻿﻿﻿# Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -69,4 +69,47 @@ npm-debug.log
 # Application-specific
 migrations/
 appsettings.local.json
+
+# .gitignore para projeto .NET (base + local env)
+bin/
+obj/
+*.user
+*.suo
+*.opendb
+*.vs/
+.vscode/
+*.db
+
+# Resposta para dotnet user-secrets
+secrets.json
+
+# Arquivos de ambiente locais
+.env.local
+.env.*.local
+.env
+
+# Logs
+*.log
+
+# Docker
+docker-compose.override.yml
+
+# ============================================
+# IMPORTANTE: Arquivos de IA e Documentação
+# ============================================
+# ✅ COMITAR (são parte do projeto):
+#    - .github/prompts/**/*.prompt.md
+#    - AI_PROMPTS_GUIDE.md
+#    - IMPLEMENTATION_REPORT.md
+#    - README.md, GETTING_STARTED.md
+#
+# ❌ NÃO COMITAR (se existirem):
+#    - Conversas privadas com IA
+#    - Arquivos .ai/ ou .copilot/ pessoais
+#    - Prompts com dados sensíveis do projeto
+
+# Ignorar conversas privadas com IA (se houver)
+.ai-conversations/
+.copilot-chat/
+*.ai-history.json
 

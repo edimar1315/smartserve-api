@@ -1,4 +1,4 @@
-﻿# 🚀 SmartServe API - Guia de Início Rápido
+﻿﻿# 🚀 SmartServe API - Guia de Início Rápido
 
 ## ✅ O que foi configurado
 
@@ -207,11 +207,55 @@ O projeto está **100% configurado** e pronto para começar o desenvolvimento!
 5. ⬜ Adicionar testes
 6. ⬜ Configurar CI/CD
 
+## 🤖 Desenvolvimento Assistido por IA
+
+### Prompts Prontos para Uso
+
+O projeto inclui **prompts padronizados** para acelerar o desenvolvimento com IA:
+
+```
+.github/prompts/
+├── code/           # Gerar features, controllers, services
+├── docs/           # Criar documentação
+├── review/         # Code review e testes
+└── devops/         # Docker, CI/CD
+```
+
+### Como Usar
+
+**No GitHub Copilot (Rider):**
+```
+Ctrl+Shift+I
+
+@workspace Use o prompt .github/prompts/code/generate-feature.prompt.md 
+para criar a feature de Reviews
+```
+
+**Guia Rápido:** [`AI_PROMPTS_GUIDE.md`](AI_PROMPTS_GUIDE.md)  
+**Documentação Completa:** [`.github/prompts/README.md`](.github/prompts/README.md)
+
+### Exemplos Práticos
+
+```bash
+# Criar feature completa
+@workspace Use generate-feature.prompt.md para Review
+
+# Gerar testes unitários
+@workspace Use unit-tests.prompt.md para ReviewService
+
+# Revisar código
+@workspace Use pr-review.prompt.md para revisar PR #123
+
+# Otimizar Docker
+@workspace Use dockerfile.prompt.md
+```
+
 ---
 
-**Data de Criação:** 2026-02-06
-**Versão:** 1.0.0-alpha
-**Status:** ✅ Pronto para Produção (MVP)
+**Data de Criação:** 2026-02-06  
+**Última Atualização:** 2026-02-08  
+**Versão:** 1.1.0  
+**Status:** ✅ Pronto para Produção (MVP) + IA-Ready
 
 Desenvolvido com ❤️ para **SmartServe Platform**
 
