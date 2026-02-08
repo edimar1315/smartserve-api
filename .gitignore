@@ -1,10 +1,21 @@
-.gitignore
+# Node.js
 
-# Existing entries
-...
+# Logs
+logs/
+*.log
 
-# Setup & Scripts Locais
-push-final.ps1
-commit-prompts.ps1
-commit-prompts.sh
-cleanup-repo.sh
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# Temporary files
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Documentation
+/api-docs/
