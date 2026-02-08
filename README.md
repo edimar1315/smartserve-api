@@ -1,4 +1,4 @@
-﻿# SmartServe API 🚀
+﻿﻿# SmartServe API 🚀
 
 Plataforma SaaS B2B de matching inteligente entre profissionais de serviço e clientes.
 
@@ -86,7 +86,7 @@ Os prompts estão organizados em `.github/prompts/` e servem como **templates de
 | `docker-compose.yml` | Ambientes replicáveis |
 | **`.github/prompts/`** | **Templates de desenvolvimento IA** |
 
-**Guia de uso:** [`AI_PROMPTS_GUIDE.md`](AI_PROMPTS_GUIDE.md)
+**Guia de uso:** [`docs/AI_PROMPTS_GUIDE.md`](docs/AI_PROMPTS_GUIDE.md)
 
 ### 🎯 Resultados Mensuráveis
 
@@ -316,7 +316,7 @@ Use os prompts disponíveis em `.github/prompts/` para acelerar:
 para criar a feature de Reviews
 ```
 
-**Guia completo:** [`AI_PROMPTS_GUIDE.md`](AI_PROMPTS_GUIDE.md)
+**Guia completo:** [`docs/AI_PROMPTS_GUIDE.md`](docs/AI_PROMPTS_GUIDE.md)
 
 ### 📋 Roadmap Técnico
 
@@ -355,11 +355,13 @@ Para mais informações, consulte a documentação completa em `/files/README.md
 
 | Documento | Descrição |
 |-----------|-----------|
-| [`GETTING_STARTED.md`](GETTING_STARTED.md) | Guia completo de setup e configuração |
-| [`AI_PROMPTS_GUIDE.md`](AI_PROMPTS_GUIDE.md) | Guia rápido de uso dos prompts de IA |
+| [`docs/GETTING_STARTED.md`](docs/GETTING_STARTED.md) | Guia completo de setup e configuração |
+| [`docs/AI_PROMPTS_GUIDE.md`](docs/AI_PROMPTS_GUIDE.md) | Guia rápido de uso dos prompts de IA |
 | [`.github/prompts/README.md`](.github/prompts/README.md) | Documentação completa dos prompts |
-| [`GIT_COMMIT_POLICY.md`](GIT_COMMIT_POLICY.md) | Política de versionamento e commits |
-| [`IMPLEMENTATION_REPORT.md`](IMPLEMENTATION_REPORT.md) | Relatório de implementação dos prompts |
+| [`docs/GIT_COMMIT_POLICY.md`](docs/GIT_COMMIT_POLICY.md) | Política de versionamento e commits |
+| [`docs/HOW_TO_COMMIT.md`](docs/HOW_TO_COMMIT.md) | Guia prático para commits |
+| [`docs/CHECKLIST.md`](docs/CHECKLIST.md) | Checklist de desenvolvimento |
+| [`docs/COMANDOS_RAPIDOS.md`](docs/COMANDOS_RAPIDOS.md) | Comandos úteis do dia a dia |
 
 ## 🔗 Links Rápidos
 
