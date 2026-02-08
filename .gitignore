@@ -99,14 +99,15 @@ fix-setup.bat
 fix-setup.ps1
 diagnose.bat
 validate.sh
-start-containers.bat
-stop-containers.bat
 
 # Scripts de push pessoais (não commitados)
 push-to-github.bat
 push-to-github.ps1
 push-to-github.sh
 push-final.ps1
+cleanup-repo.sh
+commit-prompts.ps1
+commit-prompts.sh
 
 # ============================================
 # Arquivos Temporários & Diagnóstico
